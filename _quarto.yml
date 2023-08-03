@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Caverna do Dragão Caolho"
+  site-url: https://www.myblogexample.io
+  description: "Um blog sobre tecnologia e cultura"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/nextmarte
+      - icon: twitter
+        href: https://twitter.com/nextmarcus
+      - icon: linkedin
+        href: https://www.linkedin.com/in/marcus-ramalho-8a440545/
+      - icon: rss
+        href: index.xml
+      - icon: youtube
+        href: https://www.youtube.com/channel/UCL1aCShE8iFsqfMqglIFNcw
+format:
+  html:
+    theme: 
+      dark: [sketchy, dark_sketchy.scss]
+      light: sketchy
+    css: styles.css
+
+
+
