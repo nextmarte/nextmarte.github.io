@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Caverna do Dragão Caolho</title>
-<link>https://www.myblogexample.io/index.html</link>
-<atom:link href="https://www.myblogexample.io/index.xml" rel="self" type="application/rss+xml"/>
+<link>http://dragaocaolho.me/index.html</link>
+<atom:link href="http://dragaocaolho.me/index.xml" rel="self" type="application/rss+xml"/>
 <description>Um blog sobre tecnologia e cultura</description>
 <generator>quarto-1.3.433</generator>
 <lastBuildDate>Tue, 01 Aug 2023 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Cuidado ao entrar, Dragão adiante!</title>
   <dc:creator>Marcus </dc:creator>
-  <link>https://www.myblogexample.io/posts/kickstart-blog/index.html</link>
+  <link>http://dragaocaolho.me/posts/kickstart-blog/index.html</link>
   <description><![CDATA[ 
 
 
@@ -23,7 +23,7 @@
 <div class="justify">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="https://www.myblogexample.io/posts/kickstart-blog/dragonegg.webp" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src="http://dragaocaolho.me/posts/kickstart-blog/dragonegg.webp" class="img-fluid figure-img" style="width:100.0%"></p>
 <figcaption class="figure-caption">Nebulosa Ovo de Dragão - Russell Croman</figcaption>
 </figure>
 </div>
@@ -93,9 +93,9 @@ Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
   <category>aprendizado</category>
   <category>pkm</category>
   <category>produtividade</category>
-  <guid>https://www.myblogexample.io/posts/kickstart-blog/index.html</guid>
+  <guid>http://dragaocaolho.me/posts/kickstart-blog/index.html</guid>
   <pubDate>Tue, 01 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://www.myblogexample.io/posts/kickstart-blog/dragonegg.webp" medium="image" type="image/webp"/>
+  <media:content url="http://dragaocaolho.me/posts/kickstart-blog/dragonegg.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
 </rss>
