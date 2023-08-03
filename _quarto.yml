@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Caverna do Dragão Caolho"
-  site-url: https://www.myblogexample.io
+  site-url: http://dragaocaolho.me/
   description: "Um blog sobre tecnologia e cultura"
   navbar:
     right:
