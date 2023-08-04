@@ -34,15 +34,16 @@
 <p>Um dos frameworks que mais gostei ao estudar PKM foi a abordagem de <a href="https://www.jarche.com/">Harold Jache</a>, que é baseada em 3 pilares: Capturar, Compartilhar e Cooperar. Geralmente as ferramentas de PKM focam principalmente na captura e na organização, a parte de compartilhar que envolve o desenvolvimento do conhecimento geralmente não é coberta.</p>
 <p>Mas vamos voltar ao ponto incial, o motivo de eu criar um blog. Esse ano eu apresentei uma palestra sobre o uso do <a href="https://quarto.org/">QUARTO</a> como ferramenta de PKM aplicado a pesquisa científica no VII Seminário Internacional de Estatística com R e fui convidado a transformar a palestra em um capítulo de livro pela organização do evento.</p>
 <p>Ao realizar a pesquisa para escrever o capítulo eu acabei relendo os materiais de <a href="https://www.jarche.com/">Harold Jache</a> e vendo uma de suas palestras sobre PKM que pode ser vista abaixo:</p>
+<div class="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FqZbcFDufuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
-<p>Nesse vídeo <a href="https://www.jarche.com/">Harold Jache</a> fala do que o motivou a criar um blog em um período bem conturbado da vida. Eu me identifiquei bastante com ele e por isso resolvi seguir o exemplo.</p>
-<p>Ele criou seu blog no início dos anos 2000 e atualiza até hoje, com mais de 20 anos de conteúdo. Eu não sei se vou conseguir manter o blog por tanto tempo, mas vou tentar 😅.</p>
-<p>Eu não pretendo me ater a um assunto específico, mas provavelmente vou publicar mais sobre tecnologia, produtividade, aprendizado, livros, filmes, séries, jogos, etc.</p>
-<p>Atualmente estou numa jornada pra aprender mais sobre desenvolvimento de software e ciência de dados, então provavelmente vou escrever bastante sobre esses assuntos.</p>
-<p>Também tenho um canal no youtube que está meio parado, mas pretendo transformar alguns dos posts em vídeos, então se inscreve lá pra não perder nada.</p>
+</div>
+<p>Nesse vídeo <a href="https://www.jarche.com/">Harold Jache</a> fala do que o motivou a criar um blog em um período bem conturbado da vida. Eu me identifiquei bastante com ele e por isso resolvi seguir o exemplo. Ele criou seu blog no início dos anos 2000 e atualiza até hoje, com mais de 20 anos de conteúdo. Eu não sei se vou conseguir manter o blog por tanto tempo, mas vou tentar 😅. Eu não pretendo me ater a um assunto específico, mas provavelmente vou publicar mais sobre tecnologia, produtividade, aprendizado, livros, filmes, séries, jogos, etc.</p>
+<p>Atualmente estou numa jornada pra aprender mais sobre desenvolvimento de software e ciência de dados, então provavelmente vou escrever bastante sobre esses assuntos. Também tenho um canal no youtube que está meio parado, mas pretendo transformar alguns dos posts em vídeos, então se inscreve lá pra não perder nada.</p>
+<div class="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_wdfVz9owQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
+</div>
 </div>
 <!-- ```{=html}
 <script src="https://giscus.app/client.js"

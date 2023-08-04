@@ -6,13 +6,16 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/nextmarcus
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/marcus-ramalho-8a440545/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/nextmarte
+    - icon: youtube
+      text: Youtube
+      href: https://www.youtube.com/channel/UCL1aCShE8iFsqfMqglIFNcw
 
 ---
 
@@ -21,4 +24,3 @@ about:
 Aqui eu compartilho um pouco do que se passa na minha cabeça, e também um pouco do que eu aprendo no dia a dia. Aqui você vai encontrar posts sobre tecnologia, desenvolvimento de software, política, economia, finanças, esportes, animes, filmes, esportes... enfim, um pouco de tudo.
 
 Gostou de algum post? Comente, compartilhe, e me siga nas redes sociais.
-
