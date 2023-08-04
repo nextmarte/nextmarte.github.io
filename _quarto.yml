@@ -8,8 +8,9 @@ website:
   site-url: http://dragaocaolho.me/
   description: "Um blog sobre tecnologia e cultura"
   navbar:
-    right:
+    left:
       - about.qmd
+    right:
       - icon: github
         href: https://github.com/nextmarte
       - icon: twitter
