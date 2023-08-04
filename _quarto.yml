@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  margin-header: email.html
   title: "Caverna do Dragão Caolho"
   site-url: http://dragaocaolho.me/
   description: "Um blog sobre tecnologia e cultura"

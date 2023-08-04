@@ -4,16 +4,18 @@ listing:
   contents: posts 
   sort: "date desc"
   type: default
-  categories: true
+  categories: unnumbered
   feed: true
   sort-ui: false
   filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
-:::{.center}
+:::{.left}
 
 # Últimos posts
+
+
 
 :::
 
