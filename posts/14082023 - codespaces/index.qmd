@@ -119,13 +119,13 @@ sudo apt install --no-install-recommends r-base
 sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
 ```
 
-Passo 4 - instalar as extensões do VScode
+## Passo 4 - instalar as extensões do VScode
 
 Para usar o R e o QUARTO vamos precisar instalar as extensões do VScode, para isso clique no ícone de extensões no menu lateral esquerdo e digite `R` no campo de busca e instale a extensão `R`. Repita o processo para instalar a extensão `Quarto`.
 
 ![](install_extensions.png)
 
-# passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)
+## passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)
 
 Primeiro vamos instalar algumas dependências do do Quarto para o R. O primeiro é o pacote rmarkdown, para isso digite `R` no terminal e pressione enter, isso vai abrir o console do R. Agora digite `install.packages("rmarkdown")` e pressione enter. Você precisará criar uma pasta lib para os pacotes do R, você pode fazer isso antes ou somente aceitar a criação automática da pasta no processo de instalação do primeiro pacote. Este processo pode demorar alguns minutos dependendo do poder de processamento do seu codespace.
 
@@ -133,7 +133,7 @@ Primeiro vamos instalar algumas dependências do do Quarto para o R. O primeiro 
 Se você já tiver instalado os pacotes em 'sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+' você pode pular este passo.
 :::
 
-# passo 6 - criar um projeto quarto
+## passo 6 - criar um projeto quarto
 
 Para testar a instalação do R e do QUARTO vamos criar um projeto quarto no diretório `workspaces/codespaces-blank` usando o comando `quarto create`.
     
