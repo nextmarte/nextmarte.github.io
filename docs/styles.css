@@ -10,6 +10,13 @@
     padding: 10px;
 }
 
+.quarto-title-banner {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    background-image: url('capa.png');
+
+}
+
 /* pre.sourceCode {
     background-color: rgb(94, 94, 94);
 }

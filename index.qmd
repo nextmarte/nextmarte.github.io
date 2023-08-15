@@ -11,6 +11,9 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+![](capa.png)
+
 :::{.left}
 
 # Últimos posts

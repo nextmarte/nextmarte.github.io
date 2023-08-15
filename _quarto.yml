@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  # header: capa.png
   margin-header: email.html
   title: "Nextech"
   site-url: http://dragaocaolho.me/
