@@ -129,7 +129,7 @@ Para usar o R e o QUARTO vamos precisar instalar as extensões do VScode, para i
 
 Primeiro vamos instalar algumas dependências do do Quarto para o R. O primeiro é o pacote rmarkdown, para isso digite `R` no terminal e pressione enter, isso vai abrir o console do R. Agora digite `install.packages("rmarkdown")` e pressione enter. Você precisará criar uma pasta lib para os pacotes do R, você pode fazer isso antes ou somente aceitar a criação automática da pasta no processo de instalação do primeiro pacote. Este processo pode demorar alguns minutos dependendo do poder de processamento do seu codespace.
 
-:::{.callout-caution collapse="true"}
+:::{.callout-caution collapse="true" title="Atenção"}
 Se você já tiver instalado os pacotes em 'sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+' você pode pular este passo.
 :::
 

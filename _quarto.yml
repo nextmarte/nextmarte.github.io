@@ -23,9 +23,9 @@ website:
         href: https://www.youtube.com/channel/UCL1aCShE8iFsqfMqglIFNcw
 format:
   html:
-    theme: 
-      dark: [slate, lux.scss]
-      light: slate
+    theme: cyborg
+      # dark: 
+      # light: slate
     css: styles.css
 
 
