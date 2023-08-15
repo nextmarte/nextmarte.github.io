@@ -177,7 +177,10 @@ O processo consiste em disponibilizar o repositório com o ambiente de desenvolv
 
 Se você leu até aqui muito obrigado, espero que tenha gostado e que tenha sido útil. Se você tiver alguma dúvida ou sugestão, por favor, deixe um comentário abaixo ou entre em contato comigo pelo twitter [@nextmarte](https://twitter.com/nextmarte). Cadastre seu e-mail para receber o próximo post e outras novidades.
 
+
+
 :::
+
 
 <!-- ```{=html}
 <script src="https://giscus.app/client.js"

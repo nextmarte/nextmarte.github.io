@@ -315,12 +315,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Instala alguns pacotes recomendados</span></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> add-apt-repository ppa:c2d4u.team/c2d4u4.0+</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Passo 4 - instalar as extensões do VScode</p>
+</section>
+<section id="passo-4---instalar-as-extensões-do-vscode" class="level2">
+<h2 class="anchored" data-anchor-id="passo-4---instalar-as-extensões-do-vscode">Passo 4 - instalar as extensões do VScode</h2>
 <p>Para usar o R e o QUARTO vamos precisar instalar as extensões do VScode, para isso clique no ícone de extensões no menu lateral esquerdo e digite <code>R</code> no campo de busca e instale a extensão <code>R</code>. Repita o processo para instalar a extensão <code>Quarto</code>.</p>
 <p><img src="install_extensions.png" class="img-fluid"></p>
 </section>
-<section id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos" class="level1">
-<h1>passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)</h1>
+<section id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos" class="level2">
+<h2 class="anchored" data-anchor-id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos">passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)</h2>
 <p>Primeiro vamos instalar algumas dependências do do Quarto para o R. O primeiro é o pacote rmarkdown, para isso digite <code>R</code> no terminal e pressione enter, isso vai abrir o console do R. Agora digite <code>install.packages("rmarkdown")</code> e pressione enter. Você precisará criar uma pasta lib para os pacotes do R, você pode fazer isso antes ou somente aceitar a criação automática da pasta no processo de instalação do primeiro pacote. Este processo pode demorar alguns minutos dependendo do poder de processamento do seu codespace.</p>
 <div class="callout callout-style-default callout-caution callout-titled" title="Atenção">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -339,8 +341,8 @@ Atenção
 </div>
 </div>
 </section>
-<section id="passo-6---criar-um-projeto-quarto" class="level1">
-<h1>passo 6 - criar um projeto quarto</h1>
+<section id="passo-6---criar-um-projeto-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="passo-6---criar-um-projeto-quarto">passo 6 - criar um projeto quarto</h2>
 <p>Para testar a instalação do R e do QUARTO vamos criar um projeto quarto no diretório <code>workspaces/codespaces-blank</code> usando o comando <code>quarto create</code>.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cria um projeto quarto no diretório workspaces/codespaces-blank</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">@user</span> ➜ /workspaces/codespaces-blank $ quarto create</span>
@@ -367,12 +369,12 @@ Atenção
 <figcaption class="figure-caption">resultados</figcaption>
 </figure>
 </div>
+</section>
 <section id="considerações-finais" class="level2">
 <h2 class="anchored" data-anchor-id="considerações-finais">Considerações finais</h2>
 <p>Neste post eu mostrei como criar um codespace no github e como instalar o R e o QUARTO. Também mostrei como criar um projeto quarto e renderizar o arquivo index.qmd. O processo parece trabalhoso, mas só precisa ser feito uma vez pois o codespaces nada mas é do que um container com o ambiente de desenvolvimento que você precisa para trabalhar, assim é possível manter um ambiente único para toda uma turma, por exemplo.</p>
 <p>O processo consiste em disponibilizar o repositório com o ambiente de desenvolvimento e os alunos criarem branches para desenvolverem seus projetos, tudo isso integrado ao github classroom, mas isso vai ficar pra outro post.</p>
 <p>Se você leu até aqui muito obrigado, espero que tenha gostado e que tenha sido útil. Se você tiver alguma dúvida ou sugestão, por favor, deixe um comentário abaixo ou entre em contato comigo pelo twitter <a href="https://twitter.com/nextmarte"><span class="citation" data-cites="nextmarte">@nextmarte</span></a>. Cadastre seu e-mail para receber o próximo post e outras novidades.</p>
-</section>
 </section>
 </div>
 <!-- ```{=html}
