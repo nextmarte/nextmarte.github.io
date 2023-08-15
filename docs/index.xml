@@ -5,12 +5,429 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Caverna do Dragão Caolho</title>
+<title>Nextech</title>
 <link>http://dragaocaolho.me/index.html</link>
 <atom:link href="http://dragaocaolho.me/index.xml" rel="self" type="application/rss+xml"/>
 <description>Um blog sobre tecnologia e cultura</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 01 Aug 2023 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 14 Aug 2023 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Como instalar e rodar um projeto QUARTO com R no GitHub Codespaces de graça</title>
+  <dc:creator>Marcus </dc:creator>
+  <link>http://dragaocaolho.me/posts/14082023 - codespaces/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/CodeSpaces.png" class="img-fluid"></p>
+<div class="justify">
+<section id="lidando-com-a-falta-de-recursos-computacionais-em-sala-de-aula" class="level2">
+<h2 class="anchored" data-anchor-id="lidando-com-a-falta-de-recursos-computacionais-em-sala-de-aula">Lidando com a falta de recursos computacionais em sala de aula</h2>
+<p>No último semestre eu fui estagiário em uma disciplina que tinha por objetivo ensinar fundamentos de ciência de dados com R aplicado em finanças para alunos de administração e engenharia. As aulas foram ministradas em um laboratório da minha faculdade que contava com computadores relativamente antigos (tecnologias anteriores a 2015) usando em sua maioria o windows 8. A IDE de escolha foi o RStudio, algo que aliado a baixa capacidade de processamento dos computadores, tornava a experiência de aprendizado muito ruim, pois várias vezes as aulas eram atrasadas ou retardadas devido ao mau funcionamento dos computadores que demoravam para realizar tarefas simples como o download de um pacote ou a renderização de um documento markdown. Como paliativo, sugeri a vários alunos o uso da mesma IDE na nuvem.</p>
+<p>Pensando nesse problema acabei encontrado o codespaces do GitHub como possível solução, nele o professor pode criar e preparar um ambiente com todos os recursos necessários para viabilizar o ensino da disciplina usando o GitHub Classroom ou o Google Classroom. Os alunos contam com mais de 180 h/core por mês para realizar as tarefas, além disso tem acesso a todas as vantagens do programa GitHub Student Developer Pack. O melhor de tudo é que o professor não precisa pagar nada por isso, pois o GitHub disponibiliza o serviço de forma gratuita para professores e alunos de instituições de ensino parceiras. Neste post eu vou ensinar a como preparar o ambiente de desenvolvimento com Quarto e R, além de como rodar um projeto Quarto usando o Codespaces.</p>
+<p>O que você precisa para seguir este tutorial? Uma conta no github. É simples assim, a única parte que tive alguma dificuldade foi na instalação do QUARTO no ambiente linux, mas superei rapidamente usando uma alternativa ao método de instalação sugerido na documentação oficial.</p>
+</section>
+<section id="passo-1---acessar-o-codespaces-e-criar-um-ambiente-em-branco" class="level2">
+<h2 class="anchored" data-anchor-id="passo-1---acessar-o-codespaces-e-criar-um-ambiente-em-branco">Passo 1 - acessar o codespaces e criar um ambiente em branco</h2>
+<p>Acesse o <a href="https://github.com/features/codespaces">Codespaces</a> e clique em <a href="https://github.com/codespaces">Get started for free</a>. Serão exibidas diversas opções de template, esses templates já vem com o ambiente de desenvolvimento pré-configurado para outras linguagens e frameworks, mas como vamos instalar o Quarto e o R, escolha a opção <strong>Blank</strong>. <img src="http://dragaocaolho.me/posts/14082023 - codespaces/templates.png" class="img-fluid"></p>
+<p>Você verá a interface do VScode e em alguns segundos o ambiente estará pronto para uso. Você pode acessar o terminal clicando em <strong>Terminal</strong> é através dele que vamos instalar o Quarto e o R.</p>
+</section>
+<section id="passo-2---instalar-o-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="passo-2---instalar-o-quarto">Passo 2 - Instalar o Quarto</h2>
+<p>Vocês não precisa saber <code>bash</code> para realizar a instalação, basta copiar e colar ou digitar os comandos abaixo no terminal.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># baixa o pacote usando privilégios de administrador </span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> curl <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-LO</span> https://quarto.org/download/latest/quarto-linux-amd64.deb</span></code></pre></div>
+<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/instalation.png" class="img-fluid"></p>
+<p>O arquivo será baixado na pasta codespaces-blank, para conferir digite <code>ls -l</code> no terminal e pressione enter. Agora vamos instalar o pacote usando o comando <code>dpkg</code>:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># instala o cli do QUARTO usando privilégios de administrador </span></span>
+<span id="cb2-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#e verifica a instalação</span></span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> dpkg <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-i</span> quarto-linux-amd64.deb</span>
+<span id="cb2-4"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">/usr/local/bin/quarto</span> check</span></code></pre></div>
+<p>obs.: a documentação oficial sugere o uso do comando <code>gdebi</code> porém ele não está disponível por padrão na distribuição linux do codespaces, por isso usei o <code>dpkg</code>.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"></span>
+<span id="cb3-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#output</span></span>
+<span id="cb3-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">@user</span> ➜ /workspaces/codespaces-blank $ /usr/local/bin/quarto check</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking versions of quarto binary dependencies...</span>
+<span id="cb3-6"></span>
+<span id="cb3-7">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Pandoc</span> version 3.1.1: OK</span>
+<span id="cb3-8">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Dart</span> Sass version 1.55.0: OK</span>
+<span id="cb3-9"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking versions of quarto dependencies......OK</span>
+<span id="cb3-10"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking Quarto installation......OK</span>
+<span id="cb3-11">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Version:</span> 1.3.450</span>
+<span id="cb3-12">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Path:</span> /opt/quarto/bin</span>
+<span id="cb3-13"></span>
+<span id="cb3-14"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking basic markdown render....OK</span>
+<span id="cb3-15"></span>
+<span id="cb3-16"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking Python 3 installation....OK</span>
+<span id="cb3-17">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Version:</span> 3.10.8</span>
+<span id="cb3-18">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Path:</span> /home/codespace/.python/current/bin/python3</span>
+<span id="cb3-19">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Jupyter:</span> 5.3.1</span>
+<span id="cb3-20">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Kernels:</span> python3</span>
+<span id="cb3-21"></span>
+<span id="cb3-22"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking Jupyter engine render....OK</span>
+<span id="cb3-23"></span>
+<span id="cb3-24"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">[✓]</span> Checking R installation...........<span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">None</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb3-25"></span>
+<span id="cb3-26">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Unable</span> to locate an installed version of R.</span>
+<span id="cb3-27">      <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Install</span> R from https://cloud.r-project.org/</span></code></pre></div>
+</section>
+<section id="passo-3---instalar-o-r" class="level2">
+<h2 class="anchored" data-anchor-id="passo-3---instalar-o-r">Passo 3 - Instalar o R</h2>
+<p>Verifique que o nosso check não encontrou o R instalado, vamos resolver isso agora. Vamos acessar o <a href="CRAN">https://cloud.r-project.org/</a> e descobrir como instalar o R. Para isso precisamos descobir qual é a distribuição linux que estamos usando, para isso digite <code>cat /etc/os-release</code> no terminal e pressione enter.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#output</span></span>
+<span id="cb4-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">/workspaces/codespaces-blank</span> $ cat /etc/os-release</span>
+<span id="cb4-3"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">NAME</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ubuntu"</span></span>
+<span id="cb4-4"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">VERSION</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"20.04.6 LTS (Focal Fossa)"</span></span>
+<span id="cb4-5"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">ID</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>ubuntu</span>
+<span id="cb4-6"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">ID_LIKE</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>debian</span>
+<span id="cb4-7"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">PRETTY_NAME</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ubuntu 20.04.6 LTS"</span></span>
+<span id="cb4-8"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">VERSION_ID</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"20.04"</span></span>
+<span id="cb4-9"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">HOME_URL</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://www.ubuntu.com/"</span></span>
+<span id="cb4-10"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">SUPPORT_URL</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://help.ubuntu.com/"</span></span>
+<span id="cb4-11"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">BUG_REPORT_URL</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://bugs.launchpad.net/ubuntu/"</span></span>
+<span id="cb4-12"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">PRIVACY_POLICY_URL</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"</span></span>
+<span id="cb4-13"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">VERSION_CODENAME</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>focal</span>
+<span id="cb4-14"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">UBUNTU_CODENAME</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>focal</span></code></pre></div>
+<p>Como estou usando o Ubuntu 20.04.6 LTS (Focal Fossa), vou seguir as instruções para instalação do R no Ubuntu. Vamos adicionar o repositório do CRAN ao nosso sistema, para isso digite os comandos abaixo no terminal:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># atualiza os índices</span></span>
+<span id="cb5-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt update <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-qq</span></span>
+<span id="cb5-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># instala dois pacotes auxiliares que precisamos</span></span>
+<span id="cb5-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--no-install-recommends</span> software-properties-common dirmngr</span>
+<span id="cb5-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># adiciona a chave de assinatura (por Michael Rutter) para esses repositórios</span></span>
+<span id="cb5-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Para verificar a chave, execute gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc </span></span>
+<span id="cb5-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Impressão digital: E298A3A825C0D65DFD57CBB651716619E084DAB9</span></span>
+<span id="cb5-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">wget</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-qO-</span> https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">|</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> tee <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-a</span> /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc</span>
+<span id="cb5-9"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># adiciona o repositório R 4.0 do CRAN - ajuste 'focal' para 'groovy' ou 'bionic', se necessário</span></span>
+<span id="cb5-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> add-apt-repository <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"deb https://cloud.r-project.org/bin/linux/ubuntu </span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">lsb_release</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-cs</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">-cran40/"</span></span>
+<span id="cb5-11"></span>
+<span id="cb5-12"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># instala o R</span></span>
+<span id="cb5-13"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> apt install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--no-install-recommends</span> r-base</span>
+<span id="cb5-14"></span>
+<span id="cb5-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Instala alguns pacotes recomendados</span></span>
+<span id="cb5-16"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sudo</span> add-apt-repository ppa:c2d4u.team/c2d4u4.0+</span></code></pre></div>
+<p>Passo 4 - instalar as extensões do VScode</p>
+<p>Para usar o R e o QUARTO vamos precisar instalar as extensões do VScode, para isso clique no ícone de extensões no menu lateral esquerdo e digite <code>R</code> no campo de busca e instale a extensão <code>R</code>. Repita o processo para instalar a extensão <code>Quarto</code>.</p>
+<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/install_extensions.png" class="img-fluid"></p>
+</section>
+<section id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos" class="level1">
+<h1>passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)</h1>
+<p>Primeiro vamos instalar algumas dependências do do Quarto para o R. O primeiro é o pacote rmarkdown, para isso digite <code>R</code> no terminal e pressione enter, isso vai abrir o console do R. Agora digite <code>install.packages("rmarkdown")</code> e pressione enter. Você precisará criar uma pasta lib para os pacotes do R, você pode fazer isso antes ou somente aceitar a criação automática da pasta no processo de instalação do primeiro pacote. Este processo pode demorar alguns minutos dependendo do poder de processamento do seu codespace.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Se você já tiver instalado os pacotes em ‘sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+’ você pode pular este passo.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="passo-6---criar-um-projeto-quarto" class="level1">
+<h1>passo 6 - criar um projeto quarto</h1>
+<p>Para testar a instalação do R e do QUARTO vamos criar um projeto quarto no diretório <code>workspaces/codespaces-blank</code> usando o comando <code>quarto create</code>.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># cria um projeto quarto no diretório workspaces/codespaces-blank</span></span>
+<span id="cb6-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">@user</span> ➜ /workspaces/codespaces-blank $ quarto create</span>
+<span id="cb6-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#output</span></span>
+<span id="cb6-4"> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">?</span> Create › project</span>
+<span id="cb6-5"> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">?</span> Type › website</span>
+<span id="cb6-6"> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">?</span> Directory › /workspaces/codespaces-blank</span>
+<span id="cb6-7"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Creating</span> project at /workspaces/codespaces-blank/workspaces/codespaces-blank:</span>
+<span id="cb6-8">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-</span> Created _quarto.yml</span>
+<span id="cb6-9">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-</span> Created index.qmd</span>
+<span id="cb6-10">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-</span> Created about.qmd</span>
+<span id="cb6-11">  <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-</span> Created styles.css</span></code></pre></div>
+<p>Caso queira fazer usando a interface clique em file, escolha a opção quarto project e siga as instruções da tela.</p>
+<p>Caso você tenha feito o processo pelo terminal, uma nova janela se abrirá com a pasta do projeto, a partir daqui você pode inicializar o repositório git e fazer o commit inicial caso queira, ainda não vou abordar essa parte, vai ficar para um próximo post.</p>
+<p>Ao abrir o arquivo index.qmd você verá que ele é um arquivo markdown com algumas extensões, como por exemplo a possibilidade de usar blocos de código com a linguagem R. Vamos testar isso, digite o código abaixo no arquivo index.qmd:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(cars)</span></code></pre></div>
+</div>
+<p>Agora vamos renderizar o arquivo, para isso clique no ícone do quarto no menu lateral esquerdo e escolha a opção <code>Render Document</code>. Você verá que o arquivo index.html foi criado na pasta <code>site</code> do projeto. Outra forma de renderizar é usando o comando <code>quarto render</code> no terminal.</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">quarto</span> render</span></code></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/results.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">resultados</figcaption>
+</figure>
+</div>
+<section id="considerações-finais" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-finais">Considerações finais</h2>
+<p>Neste post eu mostrei como criar um codespace no github e como instalar o R e o QUARTO. Também mostrei como criar um projeto quarto e renderizar o arquivo index.qmd. O processo parece trabalhoso, mas só precisa ser feito uma vez pois o codespaces nada mas é do que um container com o ambiente de desenvolvimento que você precisa para trabalhar, assim é possível manter um ambiente único para toda uma turma, por exemplo.</p>
+<p>O processo consiste em disponibilizar o repositório com o ambiente de desenvolvimento e os alunos criarem branches para desenvolverem seus projetos, tudo isso integrado ao github classroom, mas isso vai ficar pra outro post.</p>
+<p>Se você leu até aqui muito obrigado, espero que tenha gostado e que tenha sido útil. Se você tiver alguma dúvida ou sugestão, por favor, deixe um comentário abaixo ou entre em contato comigo pelo twitter <a href="https://twitter.com/nextmarte"><span class="citation" data-cites="nextmarte">@nextmarte</span></a>. Cadastre seu e-mail para receber o próximo post e outras novidades.</p>
+</section>
+</section>
+</div>
+<!-- ```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="nextmarte/dragao_caolho"
+        data-repo-id="R_kgDOKCPdqg"
+        data-category="General"
+        data-category-id="DIC_kwDOKCPdqs4CYSA1"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+``` -->
+<div id="disqus_thread">
+
+</div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://caverna-do-dragao-caolho.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+
+ ]]></description>
+  <category>git</category>
+  <category>github</category>
+  <category>infra</category>
+  <category>linux</category>
+  <guid>http://dragaocaolho.me/posts/14082023 - codespaces/index.html</guid>
+  <pubDate>Mon, 14 Aug 2023 03:00:00 GMT</pubDate>
+  <media:content url="http://dragaocaolho.me/posts/14082023 - codespaces/CodeSpaces.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Cuidado ao entrar, Dragão adiante!</title>
   <dc:creator>Marcus </dc:creator>
@@ -27,7 +444,7 @@
 <figcaption class="figure-caption">Nebulosa Ovo de Dragão - Russell Croman</figcaption>
 </figure>
 </div>
-<p>A imagem acima é uma nebulosa chamada de Ovo de Dragão. Ela fica na constelação de Cefeu, a 7.200 anos-luz da Terra. Eu escolhi essa imagem para ilustrar o meu primeiro post porque ela representa o início do Dragão Caolho e também porque está relacionada a um dos campos da ciência que sou entusiasta a astronomia.</p>
+<p>A imagem acima é uma nebulosa chamada de Ovo de Dragão. Ela fica na constelação de Cefeu, a 7.200 anos-luz da Terra. Eu escolhi essa imagem para ilustrar o meu primeiro post porque ela representa o início porque está relacionada a um dos campos da ciência que sou entusiasta a astronomia.</p>
 <p>Nesse post eu não escrever sobre o motivo do nome do blog ou sobre mim, hoje vamos falar da razão pela qual em pleno 2023 eu resolvi criar um blog, uma coisa um pouco longe da realidade atual, em que as pessoas preferem consumir conteúdo em redes sociais, como o Instagram, Facebook, Twitter, TikTok, etc.</p>
 <p>Em 2022 eu iniciei meu curso de mestrado strictu sensu em administração e em uma das disciplinas optativas, de gestão do conhecimento pessoal conheci o PKM (Personal Knowledge Management), que é um conjunto de técnicas e ferramentas para gerenciar o conhecimento pessoal. Eu descobri um mundo de metodos e ferramentas para organizar e gerenciar o conhecimento, mas acabei me perdendo em meio a tantas opções e não consegui implementar nada da forma como eu realmente gostaria.</p>
 <p>As ferramentas que chegaram mais perto do que eu queria foram o <a href="https://obsidian.md/">Obsidian</a> com o <a href="https://zettelkasten.de/">Zettelkasten</a> e o <a href="https://www.notion.so/">Notion</a>, mas ainda assim não era o que eu queria. Apesar de serem ferramentas excelentes eu sempre senti que faltava alguma coisa, uma das coisas mais importantes, compartilhar o conhecimento.</p>

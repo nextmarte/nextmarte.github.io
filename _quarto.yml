@@ -4,7 +4,7 @@ project:
 
 website:
   margin-header: email.html
-  title: "Caverna do Dragão Caolho"
+  title: "Nextech"
   site-url: http://dragaocaolho.me/
   description: "Um blog sobre tecnologia e cultura"
   navbar:
@@ -24,8 +24,8 @@ website:
 format:
   html:
     theme: 
-      dark: [sketchy, dark_sketchy.scss]
-      light: sketchy
+      dark: [slate, lux.scss]
+      light: slate
     css: styles.css
 
 

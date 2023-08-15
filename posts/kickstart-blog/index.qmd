@@ -10,7 +10,7 @@ editor: visual
 ::: justify
 ![Nebulosa Ovo de Dragão - Russell Croman](./dragonegg.webp){fig-align="left" width="100%"}
 
-A imagem acima é uma nebulosa chamada de Ovo de Dragão. Ela fica na constelação de Cefeu, a 7.200 anos-luz da Terra. Eu escolhi essa imagem para ilustrar o meu primeiro post porque ela representa o início do Dragão Caolho e também porque está relacionada a um dos campos da ciência que sou entusiasta a astronomia.
+A imagem acima é uma nebulosa chamada de Ovo de Dragão. Ela fica na constelação de Cefeu, a 7.200 anos-luz da Terra. Eu escolhi essa imagem para ilustrar o meu primeiro post porque ela representa o início porque está relacionada a um dos campos da ciência que sou entusiasta a astronomia.
 
 Nesse post eu não escrever sobre o motivo do nome do blog ou sobre mim, hoje vamos falar da razão pela qual em pleno 2023 eu resolvi criar um blog, uma coisa um pouco longe da realidade atual, em que as pessoas preferem consumir conteúdo em redes sociais, como o Instagram, Facebook, Twitter, TikTok, etc.
 
