@@ -1,0 +1,84 @@
+---
+title: "Opções para programação na nuvem, grátis!"
+author: "Marcus"
+date: "2023-08-18"
+categories: [cloud, stack, github, produtividade]
+image: https://cdn.vox-cdn.com/thumbor/tZLxhLAWoEFRpf0pe-CirjvF0XY=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg
+editor: visual
+---
+![](https://cdn.vox-cdn.com/thumbor/tZLxhLAWoEFRpf0pe-CirjvF0XY=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg)
+
+::: justify
+
+Você está com problemas para instalar as bibliotecas e IDE's do seu bootcamp porque seu PC é fraco? Eu trago a solução pra maior parte dos seu problemas, o GitHub codespaces, com ele você pode criar um ambiente de desenvolvimento para qualquer stack de graça. Eu escrevi um artigo para o meu blog com foco no R com QUARTO, mas você pode fazer o mesmo para qualquer linguagem. O codespaces é um container que roda uma distro linux (UBUNTU) e já vem com o python e o jupyter instalado. Dá uma olhada no meu blog post para saber como acessar: [CLIQUE AQUI PARA ACESSAR!](https://marcusramalho.tech/posts/14082023%20-%20codespaces/).
+
+
+
+Além do codespaces existem outras opções que vou listar aqui, todas baseadas no navegador.
+
+
+
+[Jupyter](https://jupyter.org/try) - Possui o Jupyter notebook e o ambiente labs, suporta **mais de 40 linguagens além de R, Python, C, JavaScript**.
+
+
+
+[Posit Cloud](https://posit.cloud/ )- Ambiente de desenvolvimento na núvem da POSIT usando a IDE RStudio, suporte: R, Quarto, C, C++, Markdown, HTML, CSS, JavaScript, D3, Python, Shell, SQL, Stan, Text, R Sweave, R HTML e outras...
+
+
+
+[Colab](https://colab.research.google.com/notebook) - Solução do Google para desenvolvimento colaborativo na núvem, suporta: Python, R, Julia, Swift, JavaScript, TypeScript, Shell, Markdown
+
+
+
+Uma diferença dessas opções para o codespaces é que você pode acessar o espaço criado no GitHub a partir do VScode instalado na sua máquina, além disso como é uma distro Linux, você pode instalar qualquer linguagem pela linha de comando. Se você conhece outras soluções baseadas na nuvem que oferecem serviço gratuito, coloca nos comentários e vamos aumentar a lista.
+
+Gostou do post? Compartilha com seus amigos e me siga aqui e nas minhas outras redes pra saber mais sobre esse e outros assuntos!
+
+[GitHub](https://github.com/nextmarte)
+
+[X](https://twitter.com/nextmarcus)
+
+[Linkedin](https://www.linkedin.com/in/marcus-ramalho-8a440545/)
+
+[Youtube](https://www.youtube.com/channel/UCL1aCShE8iFsqfMqglIFNcw)
+
+:::
+
+<!-- ```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="nextmarte/dragao_caolho"
+        data-repo-id="R_kgDOKCPdqg"
+        data-category="General"
+        data-category-id="DIC_kwDOKCPdqs4CYSA1"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="pt"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+``` -->
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://caverna-do-dragao-caolho.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

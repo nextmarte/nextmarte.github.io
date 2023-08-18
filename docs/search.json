@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Últimos posts",
     "section": "",
-    "text": "Últimos posts\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nComo instalar e rodar um projeto QUARTO com R no GitHub Codespaces de graça\n\n\n\n\n\n\n\ngit\n\n\ngithub\n\n\ninfra\n\n\nlinux\n\n\n\n\n\n\n\n\n\n\n\nAug 14, 2023\n\n\nMarcus\n\n\n\n\n\n\n  \n\n\n\n\nCuidado ao entrar, Dragão adiante!\n\n\n\n\n\n\n\nvida\n\n\naprendizado\n\n\npkm\n\n\nprodutividade\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nMarcus\n\n\n\n\n\n\nNo matching items"
+    "text": "Últimos posts\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nOpções para programação na nuvem, grátis!\n\n\n\n\n\n\n\ncloud\n\n\nstack\n\n\ngithub\n\n\nprodutividade\n\n\n\n\n\n\n\n\n\n\n\nAug 18, 2023\n\n\nMarcus\n\n\n\n\n\n\n  \n\n\n\n\nComo instalar e rodar um projeto QUARTO com R no GitHub Codespaces de graça\n\n\n\n\n\n\n\ngit\n\n\ngithub\n\n\ninfra\n\n\nlinux\n\n\n\n\n\n\n\n\n\n\n\nAug 14, 2023\n\n\nMarcus\n\n\n\n\n\n\n  \n\n\n\n\nCuidado ao entrar, Dragão adiante!\n\n\n\n\n\n\n\nvida\n\n\naprendizado\n\n\npkm\n\n\nprodutividade\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nMarcus\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -152,5 +152,12 @@
     "title": "Como instalar e rodar um projeto QUARTO com R no GitHub Codespaces de graça",
     "section": "Considerações finais",
     "text": "Considerações finais\nNeste post eu mostrei como criar um codespace no github e como instalar o R e o QUARTO. Também mostrei como criar um projeto quarto e renderizar o arquivo index.qmd. O processo parece trabalhoso, mas só precisa ser feito uma vez pois o codespaces nada mas é do que um container com o ambiente de desenvolvimento que você precisa para trabalhar, assim é possível manter um ambiente único para toda uma turma, por exemplo.\nO processo consiste em disponibilizar o repositório com o ambiente de desenvolvimento e os alunos criarem branches para desenvolverem seus projetos, tudo isso integrado ao github classroom, mas isso vai ficar pra outro post.\nSe você leu até aqui muito obrigado, espero que tenha gostado e que tenha sido útil. Se você tiver alguma dúvida ou sugestão, por favor, deixe um comentário abaixo ou entre em contato comigo pelo twitter @nextmarte. Cadastre seu e-mail para receber o próximo post e outras novidades."
+  },
+  {
+    "objectID": "posts/18082023 - nuvem/index.html",
+    "href": "posts/18082023 - nuvem/index.html",
+    "title": "Opções para programação na nuvem, grátis!",
+    "section": "",
+    "text": "Você está com problemas para instalar as bibliotecas e IDE’s do seu bootcamp porque seu PC é fraco? Eu trago a solução pra maior parte dos seu problemas, o GitHub codespaces, com ele você pode criar um ambiente de desenvolvimento para qualquer stack de graça. Eu escrevi um artigo para o meu blog com foco no R com QUARTO, mas você pode fazer o mesmo para qualquer linguagem. O codespaces é um container que roda uma distro linux (UBUNTU) e já vem com o python e o jupyter instalado. Dá uma olhada no meu blog post para saber como acessar: CLIQUE AQUI PARA ACESSAR!.\nAlém do codespaces existem outras opções que vou listar aqui, todas baseadas no navegador.\nJupyter - Possui o Jupyter notebook e o ambiente labs, suporta mais de 40 linguagens além de R, Python, C, JavaScript.\nPosit Cloud- Ambiente de desenvolvimento na núvem da POSIT usando a IDE RStudio, suporte: R, Quarto, C, C++, Markdown, HTML, CSS, JavaScript, D3, Python, Shell, SQL, Stan, Text, R Sweave, R HTML e outras…\nColab - Solução do Google para desenvolvimento colaborativo na núvem, suporta: Python, R, Julia, Swift, JavaScript, TypeScript, Shell, Markdown\nUma diferença dessas opções para o codespaces é que você pode acessar o espaço criado no GitHub a partir do VScode instalado na sua máquina, além disso como é uma distro Linux, você pode instalar qualquer linguagem pela linha de comando. Se você conhece outras soluções baseadas na nuvem que oferecem serviço gratuito, coloca nos comentários e vamos aumentar a lista.\nGostou do post? Compartilha com seus amigos e me siga aqui e nas minhas outras redes pra saber mais sobre esse e outros assuntos!\nGitHub\nX\nLinkedin\nYoutube\n\n\n\n\n\n\n\nPlease enable JavaScript to view the comments powered by Disqus."
   }
 ]
