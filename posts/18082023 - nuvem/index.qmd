@@ -44,6 +44,37 @@ Gostou do post? Compartilha com seus amigos e me siga aqui e nas minhas outras r
 
 :::
 
+```{=html}
+<div id="mc_embed_signup">
+<form
+    action="https://dragaocaolho.us21.list-manage.com/subscribe/post?u=be0aa909b2e9b8cd3d207276b&amp;id=16fe5e92a2&amp;f_id=00e35ce1f0"
+    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+    target="_blank">
+    <div id="mc_embed_signup_scroll">
+        <label for="exampleInputEmail1" class="form-label mt-4 indicates-required">Se inscreva para receber novos
+            posts por e-mail <span class="asterisk">*</span></label>
+        <div class="mc-field-group">
+            <input type="email" class="form-control required email" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Enter email" name="EMAIL">
+            <small id="emailHelp" class="form-text text-muted">Não irei compartilhar seu e-mail com mais
+                ninguém</small>
+        </div>
+        <div id="mce-responses">
+            <div class="response" id="mce-error-response" style="display: none;"></div>
+            <div class="response" id="mce-success-response" style="display: none;"></div>
+        </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+            <input type="text" name="b_be0aa909b2e9b8cd3d207276b_16fe5e92a2" tabindex="-1" value="">
+        </div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <button type="submit" class="btn btn-primary" name="subscribe" id="mc-embedded-subscribe">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+```
 <!-- ```{=html}
 <script src="https://giscus.app/client.js"
         data-repo="nextmarte/dragao_caolho"
