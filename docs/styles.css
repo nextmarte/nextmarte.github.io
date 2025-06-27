@@ -24,3 +24,9 @@
 code span.co {
     color: #fffdfd;
 } */
+
+/* justificando todos os textos */
+
+p {
+    text-align: justify !important
+}

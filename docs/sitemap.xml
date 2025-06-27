@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.myblogexample.io/index.html</loc>
-    <lastmod>2023-08-02T16:29:01.846Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.myblogexample.io/posts/kickstart-blog/index.html</loc>
-    <lastmod>2023-08-02T16:27:23.196Z</lastmod>
-  </url>
-  <url>
     <loc>http://dragaocaolho.me/index.html</loc>
-    <lastmod>2023-08-22T02:40:36.203Z</lastmod>
-  </url>
-  <url>
-    <loc>http://dragaocaolho.me/posts/kickstart-blog/index.html</loc>
-    <lastmod>2023-08-22T02:39:30.063Z</lastmod>
-  </url>
-  <url>
-    <loc>http://dragaocaolho.me/about.html</loc>
-    <lastmod>2023-08-15T02:53:27.772Z</lastmod>
+    <lastmod>2025-06-27T13:25:16.173Z</lastmod>
   </url>
   <url>
     <loc>http://dragaocaolho.me/posts/14082023 - codespaces/index.html</loc>
-    <lastmod>2023-08-15T02:53:18.572Z</lastmod>
+    <lastmod>2025-06-27T13:25:16.178Z</lastmod>
+  </url>
+  <url>
+    <loc>http://dragaocaolho.me/posts/kickstart-blog/index.html</loc>
+    <lastmod>2025-06-27T13:25:16.186Z</lastmod>
+  </url>
+  <url>
+    <loc>http://dragaocaolho.me/about.html</loc>
+    <lastmod>2025-06-27T13:25:16.125Z</lastmod>
+  </url>
+  <url>
+    <loc>http://dragaocaolho.me/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/index.html</loc>
+    <lastmod>2025-06-27T14:03:27.079Z</lastmod>
   </url>
   <url>
     <loc>http://dragaocaolho.me/posts/18082023 - nuvem/index.html</loc>
-    <lastmod>2023-08-22T02:38:00.053Z</lastmod>
+    <lastmod>2025-06-27T14:03:38.804Z</lastmod>
   </url>
 </urlset>
