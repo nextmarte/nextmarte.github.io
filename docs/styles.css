@@ -30,3 +30,7 @@ code span.co {
 p {
     text-align: justify !important
 }
+
+.listing-description {
+    text-align: justify !important;
+}

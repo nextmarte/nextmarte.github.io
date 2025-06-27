@@ -8,7 +8,10 @@ image: https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-d
 image-alt: "A caverna digital"
 bibliography: references.bib
 csl: apa.csl
+style: styles.css
 ---
+
+
 
 ![](cave.png)
 

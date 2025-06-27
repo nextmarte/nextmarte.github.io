@@ -5,23 +5,23 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Nextech</title>
-<link>http://dragaocaolho.me/</link>
-<atom:link href="http://dragaocaolho.me/index.xml" rel="self" type="application/rss+xml"/>
+<title>Marcus Ramalho</title>
+<link>https://nextmarte.github.io/</link>
+<atom:link href="https://nextmarte.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Um blog sobre tecnologia e cultura</description>
 <generator>quarto-1.6.0</generator>
 <lastBuildDate>Fri, 27 Jun 2025 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Inteligência Artificial, Big Techs e a Dialética da Sociedade Digital</title>
   <dc:creator>Marcus Antonio Cardoso Ramalho</dc:creator>
-  <link>http://dragaocaolho.me/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/</link>
+  <link>https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="http://dragaocaolho.me/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/cave.png" class="img-fluid"></p>
+<p><img src="https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/cave.png" class="img-fluid"></p>
 <section id="introdução" class="level2">
 <h2 class="anchored" data-anchor-id="introdução">INTRODUÇÃO</h2>
 <p>A Inteligência Artificial (IA) tem sido discutida por todo o mundo, tanto no que tange aos aspectos éticos <span class="citation" data-cites="coeckelbergh2023">(Coeckelbergh, 2023)</span> quanto econômicos, sociais e culturais <span class="citation" data-cites="kissinger2022">(Kissinger, 2022)</span> que sua adoção em escala pode causar na sociedade, mas o debate se tornou ainda mais acalorado a partir do surgimento de ferramentas como o ChatGPT <span class="citation" data-cites="chatgpt2025">(OpenAI, 2025)</span>, Gemini <span class="citation" data-cites="gemini2025">(Google, 2025)</span> e o DeepSeek <span class="citation" data-cites="guoa">(Guo et al., 2025)</span>. Essas ferramentas, desenvolvidas por grandes empresas de tecnologia, tomaram o mundo de assalto graças à sua capacidade de gerar textos, imagens, vídeos e código de forma automática, o que trouxe benefícios como o aumento da produtividade e a democratização do acesso à informação, mas também levantou preocupações sobre o impacto que a IA pode ter na sociedade <span class="citation" data-cites="coeckelbergh2023">(Coeckelbergh, 2023)</span>.</p>
@@ -121,14 +121,14 @@ Shelley, M. W. (1818). <em>Frankenstein; or, the modern prometheus</em>. Lacking
 </div></section></div> ]]></description>
   <category>IA</category>
   <category>Filosofia</category>
-  <guid>http://dragaocaolho.me/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/</guid>
+  <guid>https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/</guid>
   <pubDate>Fri, 27 Jun 2025 03:00:00 GMT</pubDate>
   <media:content url="https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/cave.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Opções para programação na nuvem, grátis!</title>
   <dc:creator>Marcus </dc:creator>
-  <link>http://dragaocaolho.me/posts/18082023 - nuvem/</link>
+  <link>https://nextmarte.github.io/posts/18082023 - nuvem/</link>
   <description><![CDATA[ 
 
 
@@ -221,21 +221,21 @@ Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
   <category>stack</category>
   <category>github</category>
   <category>produtividade</category>
-  <guid>http://dragaocaolho.me/posts/18082023 - nuvem/</guid>
+  <guid>https://nextmarte.github.io/posts/18082023 - nuvem/</guid>
   <pubDate>Fri, 18 Aug 2023 03:00:00 GMT</pubDate>
   <media:content url="https://cdn.vox-cdn.com/thumbor/tZLxhLAWoEFRpf0pe-CirjvF0XY=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Como instalar e rodar um projeto QUARTO com R no GitHub Codespaces de graça</title>
   <dc:creator>Marcus </dc:creator>
-  <link>http://dragaocaolho.me/posts/14082023 - codespaces/</link>
+  <link>https://nextmarte.github.io/posts/14082023 - codespaces/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/CodeSpaces.png" class="img-fluid"></p>
+<p><img src="https://nextmarte.github.io/posts/14082023 - codespaces/CodeSpaces.png" class="img-fluid"></p>
 <div class="justify">
 <section id="lidando-com-a-falta-de-recursos-computacionais-em-sala-de-aula" class="level2">
 <h2 class="anchored" data-anchor-id="lidando-com-a-falta-de-recursos-computacionais-em-sala-de-aula">Lidando com a falta de recursos computacionais em sala de aula</h2>
@@ -245,7 +245,7 @@ Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
 </section>
 <section id="passo-1---acessar-o-codespaces-e-criar-um-ambiente-em-branco" class="level2">
 <h2 class="anchored" data-anchor-id="passo-1---acessar-o-codespaces-e-criar-um-ambiente-em-branco">Passo 1 - acessar o codespaces e criar um ambiente em branco</h2>
-<p>Acesse o <a href="https://github.com/features/codespaces">Codespaces</a> e clique em <a href="https://github.com/codespaces">Get started for free</a>. Serão exibidas diversas opções de template, esses templates já vem com o ambiente de desenvolvimento pré-configurado para outras linguagens e frameworks, mas como vamos instalar o Quarto e o R, escolha a opção <strong>Blank</strong>. <img src="http://dragaocaolho.me/posts/14082023 - codespaces/templates.png" class="img-fluid"></p>
+<p>Acesse o <a href="https://github.com/features/codespaces">Codespaces</a> e clique em <a href="https://github.com/codespaces">Get started for free</a>. Serão exibidas diversas opções de template, esses templates já vem com o ambiente de desenvolvimento pré-configurado para outras linguagens e frameworks, mas como vamos instalar o Quarto e o R, escolha a opção <strong>Blank</strong>. <img src="https://nextmarte.github.io/posts/14082023 - codespaces/templates.png" class="img-fluid"></p>
 <p>Você verá a interface do VScode e em alguns segundos o ambiente estará pronto para uso. Você pode acessar o terminal clicando em <strong>Terminal</strong> é através dele que vamos instalar o Quarto e o R.</p>
 </section>
 <section id="passo-2---instalar-o-quarto" class="level2">
@@ -259,7 +259,7 @@ background-color: null;
 font-style: inherit;">sudo</span> curl <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">-LO</span> https://quarto.org/download/latest/quarto-linux-amd64.deb</span></code></pre></div>
-<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/instalation.png" class="img-fluid"></p>
+<p><img src="https://nextmarte.github.io/posts/14082023 - codespaces/instalation.png" class="img-fluid"></p>
 <p>O arquivo será baixado na pasta codespaces-blank, para conferir digite <code>ls -l</code> no terminal e pressione enter. Agora vamos instalar o pacote usando o comando <code>dpkg</code>:</p>
 <div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -510,7 +510,7 @@ font-style: inherit;">sudo</span> add-apt-repository ppa:c2d4u.team/c2d4u4.0+</s
 <section id="passo-4---instalar-as-extensões-do-vscode" class="level2">
 <h2 class="anchored" data-anchor-id="passo-4---instalar-as-extensões-do-vscode">Passo 4 - instalar as extensões do VScode</h2>
 <p>Para usar o R e o QUARTO vamos precisar instalar as extensões do VScode, para isso clique no ícone de extensões no menu lateral esquerdo e digite <code>R</code> no campo de busca e instale a extensão <code>R</code>. Repita o processo para instalar a extensão <code>Quarto</code>.</p>
-<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/install_extensions.png" class="img-fluid"></p>
+<p><img src="https://nextmarte.github.io/posts/14082023 - codespaces/install_extensions.png" class="img-fluid"></p>
 </section>
 <section id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos" class="level2">
 <h2 class="anchored" data-anchor-id="passo-5---instalar-pacotes-apenas-se-você-não-tiver-instalado-os-pacotes-sugeridos">passo 5 - instalar pacotes (apenas se você não tiver instalado os pacotes sugeridos)</h2>
@@ -582,7 +582,7 @@ background-color: null;
 font-style: inherit;">quarto</span> render</span></code></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="http://dragaocaolho.me/posts/14082023 - codespaces/results.png" class="img-fluid figure-img"></p>
+<p><img src="https://nextmarte.github.io/posts/14082023 - codespaces/results.png" class="img-fluid figure-img"></p>
 <figcaption>resultados</figcaption>
 </figure>
 </div>
@@ -643,9 +643,9 @@ Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">
   <category>github</category>
   <category>infra</category>
   <category>linux</category>
-  <guid>http://dragaocaolho.me/posts/14082023 - codespaces/</guid>
+  <guid>https://nextmarte.github.io/posts/14082023 - codespaces/</guid>
   <pubDate>Mon, 14 Aug 2023 03:00:00 GMT</pubDate>
-  <media:content url="http://dragaocaolho.me/posts/14082023 - codespaces/CodeSpaces.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://nextmarte.github.io/posts/14082023 - codespaces/CodeSpaces.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
