@@ -4,7 +4,7 @@ description: "Uma leitura crítica das Big Techs à luz da alegoria da caverna d
 author: "Marcus Antonio Cardoso Ramalho"
 date: "2025-06-27"
 categories: ["IA", "Filosofia"]
-image: "/cave.png"
+image: https://nextmarte.github.io/posts/intelig-ncia-artificial-big-techs-e-a-dial-tica-da-sociedade-digital/cave.png
 image-alt: "A caverna digital"
 bibliography: references.bib
 csl: apa.csl
